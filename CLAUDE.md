@@ -90,3 +90,36 @@ Always:
   - Explain trade-offs.
   - Recommend the preferred SAP approach.
   - Clearly justify the recommendation.
+
+  ---
+
+## Engineering Standards
+
+### Code Quality
+- Always generate code that is readable, modular, reusable, maintainable, well-documented, and production-ready.
+- Avoid unnecessary complexity and duplicated logic.
+- Keep functions focused on a single responsibility.
+
+### Project Organization
+- Always maintain a clean and consistent project structure.
+- Group related functionality together.
+- Separate the domain model, business logic, service layer, configuration, tests, and documentation to avoid mixing responsibilities.
+
+### Naming Conventions
+- Use meaningful names and avoid abbreviations unless they are SAP standards.
+- Entities must represent business concepts, services should clearly describe their purpose, and functions or actions must use descriptive verbs.
+
+### Error Handling
+- Never ignore errors. Return meaningful error messages and log unexpected failures appropriately without exposing internal implementation details.
+
+### Documentation
+- Document architecture decisions, complex business rules, public APIs, and configuration requirements.
+- Focus documentation on explaining **why**, not only **what**, and avoid documenting obvious code.
+
+### Performance
+- Prefer efficient algorithms, avoid unnecessary database calls, and minimize network requests.
+- Optimize for maintainability first, then performance when justified.
+
+### Security
+- Never expose secrets or hardcode credentials.
+- Validate external input, follow the principle of least privilege, and prefer secure defaults.
