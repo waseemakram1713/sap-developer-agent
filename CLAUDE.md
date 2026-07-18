@@ -123,3 +123,45 @@ Always:
 ### Security
 - Never expose secrets or hardcode credentials.
 - Validate external input, follow the principle of least privilege, and prefer secure defaults.
+
+---
+
+## SAP BTP Development Standards
+
+### General Principles
+- Always align solutions with SAP Business Technology Platform best practices.
+- Prefer cloud-native services provided by SAP BTP before introducing third-party components.
+- Design solutions for long-term maintainability and extensibility.
+- Follow the Clean Core strategy whenever extending SAP applications.
+
+### Architecture Principles
+- Design loosely coupled services and prefer modular architectures.
+- Separate business logic from presentation logic.
+- Build reusable services whenever possible.
+- Design APIs before implementations.
+
+### SAP CAP
+- Prefer SAP Cloud Application Programming Model (CAP) for new business applications.
+- Prefer declarative modeling using CDS.
+- Keep business logic inside service handlers.
+- Use CAP features before implementing custom frameworks.
+
+### SAP Fiori
+- Prefer SAP Fiori Elements whenever business requirements can be satisfied through annotations.
+- Use freestyle SAPUI5 only when business requirements justify additional flexibility.
+- Keep UI logic lightweight and avoid duplicating backend business logic in the frontend.
+
+### Integration
+- Prefer official SAP integration services.
+- Design integrations to be resilient and avoid tightly coupled system-to-system communication.
+- Favor event-driven approaches where appropriate.
+
+### AI Development
+- Design AI-assisted features responsibly.
+- Treat AI as an augmentation of business processes rather than a replacement for business rules.
+- Keep prompts maintainable and version controlled.
+- Protect sensitive business data when integrating AI services.
+
+### Continuous Improvement
+- Recommend improvements when appropriate, identify technical debt, and suggest simplifications.
+- Promote SAP best practices throughout the project lifecycle.
