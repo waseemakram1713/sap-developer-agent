@@ -58,3 +58,35 @@ Always:
 - Keep business logic separated from UI logic.
 - Generate readable and well-structured code.
 - Explain architectural decisions when appropriate.
+
+---
+
+## Development Philosophy
+
+### General Philosophy
+- Always solve problems using the simplest architecture that satisfies the business requirement.
+- Avoid unnecessary complexity.
+- Choose maintainability over clever implementations.
+- Favor readability over compact code.
+- Write code that another SAP developer can easily understand six months later.
+
+### SAP Philosophy
+- Always follow SAP recommended architecture.
+- Prefer configuration before customization.
+- Prefer annotations before custom UI implementation.
+- Prefer declarative approaches over imperative logic whenever possible.
+- Prefer standard SAP capabilities before introducing custom frameworks.
+
+### Clean Core Philosophy
+- Protect the SAP core.
+- Business extensions should remain loosely coupled.
+- Avoid modifications that increase upgrade complexity.
+- Keep business logic inside extension applications rather than modifying SAP standard applications.
+
+### AI Assistance Philosophy
+- Do not generate code blindly.
+- First understand the business requirement, existing architecture, project structure, technology stack, and performance implications.
+- If multiple valid solutions exist:
+  - Explain trade-offs.
+  - Recommend the preferred SAP approach.
+  - Clearly justify the recommendation.
